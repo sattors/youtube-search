@@ -37,12 +37,12 @@ use Youtube\Settings;
 require_once __DIR__ . '/vendor/autoload.php';
 
 // YouTube video qidiruv
-$youtube = new Video(new Settings(array()));
+$youtube = new Video(new Settings(array("hl" => "en", "fl" => "US")));
 $results = $youtube->Search("test", length: 1, offset: 0)->results();
 print_r($results);
 
 // Qidiruv tavsiyalari (suggestions)
-$youtube = new Suggestion(new Settings(array()));
+$youtube = new Suggestion(new Settings(array("hl" => "en", "fl" => "US")));
 $results = $youtube->Search("test")->results();
 print_r($results);
 ```

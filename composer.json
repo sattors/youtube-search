@@ -1,4 +1,15 @@
 {
+    "name": "sattorbek/youtube-search",
+    "description": "A PHP package to scrape YouTube search results.",
+    "keywords": ["youtube", "scraper", "search", "guzzle"],
+    "homepage": "https://github.com/sattorbek/youtube-search", 
+    "license": "MIT", 
+    "authors": [
+        {
+            "name": "Sattorbek Sa'dullayev",
+            "email": "sattorbekoff@gmail.com"
+        }
+    ],
     "require": {
         "guzzlehttp/guzzle": "^7.9"
     },
@@ -6,5 +17,7 @@
         "psr-4": {
             "Youtube\\": "src/"
         }
-    }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
 }
